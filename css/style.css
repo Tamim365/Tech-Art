@@ -1212,6 +1212,7 @@ Responsive
 
 .character-img {
 	position: absolute;
+	top: 50px;
 }
 
 .character-one {
@@ -1232,7 +1233,7 @@ Responsive
 .character-two .character-img {
 	bottom: -285px;
 	left: 0;
-	width: 68%;
+	width: 35%;
 }
 
 .character-three {
