@@ -129,7 +129,7 @@ Commom elements
 
 .site-btn:hover {
 	color: #161616;
-	background-color: crimson;
+	background-color: #e97171;
 }
 
 .site-btn.sb-color {
@@ -480,6 +480,9 @@ Header section
 	font-size: 14px;
 	font-weight: 700;
 	color: #10ddb4;
+	display: flex;
+	justify-content: center;
+	margin: 40px auto;  
 }
 
 .blog-post.featured-post,
