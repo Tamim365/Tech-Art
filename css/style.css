@@ -1148,28 +1148,29 @@ Single Post page
 Responsive
  ---------------------*/
 
-.characters-section {
+.timeline-section {
 	padding: 144px 0 118px;
 	overflow: hidden;
 	position: relative;
 }
-
-.character-info img {
-	margin-bottom: 3px;
+.timeline-img h3{
+	margin: 20px auto 0px;
+	text-align: center;
+	color: rgba(158, 255, 242, 0.63);
 }
 
-.character-info h2 {
+.timeline-info h2 {
 	font-size: 48px;
 	color: #fff;
 	margin-bottom: 15px;
 }
 
-.character-info h5 {
+.timeline-info h5 {
 	color: #fff;
 	margin-bottom: 9px;
 }
 
-.character-info p {
+.timeline-info p {
 	padding-top: 30px;
 	margin-bottom: 40px;
 }
@@ -1213,49 +1214,50 @@ Responsive
 	color: #8c8c8c;
 }
 
-.character-img {
+.timeline-img {
 	position: absolute;
-	top: 50px;
 }
 
-.character-one {
+.timeline-one {
 	background: #1c1c1c;
 }
 
-.character-one .character-img {
-	bottom: -180px;
-	right: 0;
-	width: 42%;
-	text-align: right;
+.timeline-one .timeline-img {
+	width: 40%;
+	text-align: center;
+	position: absolute;
+	top: 50px;
+	right: 20px;
 }
 
-.character-two {
+.timeline-two {
 	background: #2d2d2d;
 }
 
-.character-two .character-img {
-	bottom: -285px;
+.timeline-two .timeline-img {
+	width: 40%;
+	position: absolute;
+	top: 20px;
 	left: 0;
-	width: 35%;
 }
 
-.character-three {
+.timeline-three {
 	background: #000;
 	background: #1c1c1c;
 }
 
-.character-three .character-img {
+.timeline-three .timeline-img {
 	bottom: 0;
 	right: 0;
 	width: 50%;
 	text-align: right;
 }
 
-.character-four {
+.timeline-four {
 	background: #2d2d2d;
 }
 
-.character-four .character-img {
+.timeline-four .timeline-img {
 	bottom: -145px;
 	left: 0;
 	width: 50%;
@@ -1325,30 +1327,30 @@ Game Page
 	top: -30px;
 }
 
-.characters-boxes-section {
+.timeline-boxes-section {
 	background: #000000;
 	padding: 113px 0 90px;
 }
 
-.characters-box {
+.timeline-box {
 	margin-bottom: 30px;
 }
 
-.characters-box img {
+.timeline-box img {
 	margin-bottom: 35px;
 	min-width: 100%;
 }
 
-.characters-box h4 {
+.timeline-box h4 {
 	color: #fff;
 	margin-bottom: 20px;
 }
 
-.characters-box p {
+.timeline-box p {
 	margin-bottom: 25px;
 }
 
-.characters-box .rm {
+.timeline-box .rm {
 	color: #10ddb4;
 	font-size: 16px;
 	font-weight: 700;
@@ -1553,14 +1555,14 @@ Responsive
 	.header-add {
 		width: 35%;
 	}
-	.character-two .character-img {
+	.timeline-two .timeline-img {
 		bottom: -100px;
 	}
-	.character-three .character-img {
+	.timeline-three .timeline-img {
 		width: 40%;
 	}
-	.character-one .character-img,
-	.character-four .character-img {
+	.timeline-one .timeline-img,
+	.timeline-four .timeline-img {
 		bottom: 0;
 	}
 }
@@ -1580,12 +1582,12 @@ Responsive
 	.social-links a {
 		margin-right: 60px;
 	}
-	.character-one .character-img,
-	.character-two .character-img,
-	.character-four .character-img {
+	.timeline-one .timeline-img,
+	.timeline-two .timeline-img,
+	.timeline-four .timeline-img {
 		bottom: 0;
 	}
-	.character-three .character-img {
+	.timeline-three .timeline-img {
 		width: 44%;
 	}
 }
@@ -1633,13 +1635,13 @@ Responsive
 	.work-step-box h4 {
 		font-size: 18px;
 	}
-	.characters-section {
-		padding-bottom: 0;
+	.timeline-section {
+		padding: 0px 0px 50px 0px;
 	}
-	.character-one .character-img,
-	.character-two .character-img,
-	.character-three .character-img,
-	.character-four .character-img {
+	.timeline-one .timeline-img,
+	.timeline-two .timeline-img,
+	.timeline-three .timeline-img,
+	.timeline-four .timeline-img {
 		position: relative;
 		left: 0;
 		right: 0;
@@ -1738,13 +1740,13 @@ Responsive
 	.testimonial-text {
 		padding: 48px 40px 55px;
 	}
-	.characters-section {
-		padding-bottom: 0;
+	.timeline-section {
+		padding: 0px 0px 50px 0px;
 	}
-	.character-one .character-img,
-	.character-two .character-img,
-	.character-three .character-img,
-	.character-four .character-img {
+	.timeline-one .timeline-img,
+	.timeline-two .timeline-img,
+	.timeline-three .timeline-img,
+	.timeline-four .timeline-img {
 		position: relative;
 		left: 0;
 		right: 0;
