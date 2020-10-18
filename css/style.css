@@ -1245,6 +1245,19 @@ Single Post page
 Responsive
  ---------------------*/
 
+ .timeline-img img{
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: bounce-2;
+	animation-timing-function: ease;
+ }
+
+ @keyframes bounce-2 {
+	0%   { transform: translateY(0); }
+	50%  { transform: translateY(-20px); }
+	100% { transform: translateY(0); }
+}
+
  #img-1993{
 	width: 35%;
 	top: 5px;
