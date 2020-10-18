@@ -292,12 +292,12 @@ Header section
 	background: #2b2e4a;
 }
 
-.nav-item a:hover::after{
+.nav-item:hover::after{
 	width: 100%;
 }
 
 
-.nav-item a::after{
+.nav-item:after{
 	position: absolute;
 	content: "";
 	width: 0;
@@ -307,6 +307,10 @@ Header section
 	background: #10ddb4;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
+}
+
+.nav-link{
+	padding-bottom: 5px;
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -1267,7 +1271,33 @@ Responsive
 	margin-right: 90px;
 }
 
+#img-2004{
+	width: 100%;
+	margin-left: 50px;
+}
+
+#img-2004 h3{
+	text-align: left;
+	margin-left: 120px;
+	margin-top: 50px;
+}
+
 #img-2007{
+	margin-left: 100px;
+}
+
+#img-2007 h3{
+	text-align: left;
+	margin-left: 150px;
+	margin-top: 30px;
+}
+
+
+#img-2010{
+	margin-top: 70px;
+}
+
+#img-2010 h3{
 	margin-top: 50px;
 }
 
