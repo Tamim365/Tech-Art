@@ -1288,7 +1288,7 @@ Responsive
 
 #img-2007 h3{
 	text-align: left;
-	margin-left: 150px;
+	margin-left: 50px;
 	margin-top: 30px;
 }
 
@@ -1958,4 +1958,224 @@ Responsive
 	.game-title h2 {
 		font-size: 36px;
 	}
+}
+
+/*=================footer css start==============*/
+
+#site-content {
+	min-height: 100%;
+	min-height: 100vh;
+	padding-top: 65px;
+	position: relative;
+	z-index: 1;
+
+	-webkit-box-shadow: #000 0 7px 35px 0;
+	-moz-box-shadow: #000 0 7px 35px 0;
+	box-shadow: #000 0 7px 35px 0;
+  
+}
+
+#site-footer {
+	margin-top: 20px;
+	font-size: 85%;
+	background-color: #2A2A2A;
+	position: fixed;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#site-content {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#site-footer {
+	min-height: 20vw;
+	background-size: cover;
+	background-position: center;
+}
+
+.webintern-footer {
+	background: #0d2034;
+}
+
+.webintern-footer-inner {
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.webintern-footer-logo {
+	display: inline-block;
+}
+
+.webintern-footer .webintern-footer-inner .simple-text p {
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.simple-text p {
+	font-size: 14px;
+	color: #42435d;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 22px;
+	margin-bottom: 0;
+}
+
+.webintern-footer .webintern-footer-inner .simple-text a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #f2c21a;
+	font-size: 15px;
+}
+.footer-2 {
+	padding-left: 55px;
+}
+.webintern_footer_title {
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+.webintern_footer_title small {
+	font-family: 'Work Sans', sans-serif;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.webintern_footer_title:after {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 2px;
+	background: #f2c21a;
+	margin-top: 15px;
+}
+.webintern-footer-list {
+	padding: 0;
+}
+.webintern-footer-list li {
+	margin-bottom: 17px;
+	list-style: none;
+}
+.webintern-footer-list a {
+	position: relative;
+	font-size: 15px;
+	line-height: 18px;
+	color: #fff;
+	padding-left: 0;
+	letter-spacing: 0.20px;
+	font-family: 'Open Sans', sans-serif;
+}
+.footer-3 {
+	padding-left: 65px;
+}
+.webintern-footer-inner .simple-text.last {
+	color: #d5d5d5;
+	font-size: 17px;
+	font-style: italic;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.tt-subscribe {
+	position: relative;
+}
+.tt-subscribe input:not([type="submit"]) {
+	width: 100%;
+	height: 46px;
+	background: #fff;
+	font-size: 15px;
+	color: #838486;
+	padding-left: 20px;
+	padding-right: 70px;
+	border: 2px solid #fff;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.tt-subscribe-submit {
+	background: #001b57;
+}
+
+.tt-subscribe-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 52px;
+	height: 46px;
+	font-size: 18px;
+	line-height: 46px;
+	color: #2a2a2a;
+	text-align: center;
+	background: #001b57;
+	-moz-border-radius-topright: 3px;
+	border-top-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+
+.tt-subscribe-submit i.fa-envelope:before {
+	content: "\f0e0";
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	cursor: pointer;
+}
+.tt-subscribe-submit input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #51658d;
+	border: 0;
+	cursor: pointer;
+}
+ul.tt-socail {
+	padding: 0;
+	margin-top: 30px;
+}
+.tt-socail li {
+	display: inline-block;
+	margin-right: 10px;
+}
+.tt-socail a {
+	display: block;
+	width: 36px;
+	height: 36px;
+	font-size: 17px;
+	line-height: 34px;
+	color: #fff;
+	text-align: center;
+	border: 1px solid #fff;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+.webintern_footer_title small {
+	font-family: 'Work Sans', sans-serif;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.tt-copy
+{
+	font-size: 15px;
+	line-height: 20px;
+	color: #fff;
+	background: #51658d;
+	padding: 15px 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.tt-copy-right {
+	text-align: right;
+}
+.tt-copy-right a{
+	color: yellow;
+	margin-left: 1px;
+}
+.tt-copy-right a:hover{
+	color: turquoise;
 }
