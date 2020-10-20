@@ -731,7 +731,7 @@ video {
 }
 
 .latest-news-widget .ln-item {
-	margin-bottom: 29px;
+	margin-bottom: 40px;
 	position: relative;
 }
 
@@ -818,9 +818,12 @@ video {
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+.latest-news-widget.top-five .ln-text h6{
+	margin-top: 10px;
+}
 
 .latest-news-widget.top-five .ln-item {
-	margin-bottom: 59px;
+	margin-bottom: 120px;
 }
 
 .latest-news-widget.top-five .ln-item:nth-child(1) .ln-index {
@@ -912,7 +915,7 @@ Blog list section
 }
 
 .small-blog-list .sb-item img {
-	width: 166px;
+	width: 350px;
 	float: left;
 	margin-right: 27px;
 }
