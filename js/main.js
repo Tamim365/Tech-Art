@@ -28,6 +28,19 @@ $(window).on('load', function() {
 				// remove padding top from body
 				$('body').css('padding-top', '0');
 			}
+			if ($(this).scrollTop() > 1000) {
+				$('#site-footer').css('position', 'fixed');
+				$('#site-footer').css('left', '0');
+				$('#site-footer').css('right', '0');
+				$('#site-footer').css('bottom', '0');
+			}
+			else
+			{
+				$('#site-footer').css('left', '');
+				$('#site-footer').css('right', '');
+				$('#site-footer').css('bottom', '');
+				$('#site-footer').css('position', '');
+			}
 		});
 	}
 
