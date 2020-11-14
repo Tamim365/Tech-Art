@@ -2445,6 +2445,25 @@ ul.tt-socail {
 .form-v8-content .form-detail .form-row-last input {
 	padding: 11px;
 }
+
+.alert {
+	text-align: center;
+	padding: 10px;
+	background: #1fab89;
+	color:#f6f7d7;
+	margin-bottom: 10px;
+	display: none;
+}
+
+.invalid {
+	text-align: center;
+	padding: 10px;
+	background: #d72323;
+	color:#f6f7d7;
+	margin-bottom: 10px;
+	display: none;
+}
+
 /* Responsive */
 @media screen and (max-width: 991px) {
 	.form-v8-content {

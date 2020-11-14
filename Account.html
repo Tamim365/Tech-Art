@@ -69,15 +69,17 @@
 				<img src="img/account.png" alt="form">
 			</div>
 			<div class="form-right">
+				<div class="alert">Registration Successful. Please Log in.</div>
+				<div class="invalid">Invalid Email or Password</div>
 				<div class="tab">
 					<div class="tab-inner">
-						<button class="tablinks" onclick="openCity(event, 'sign-in')" id="defaultOpen">Sign In</button>
+						<button class="tablinks" onclick="changeTab(event, 'sign-in')" id="defaultOpen">Sign In</button>
 					</div>
 					<div class="tab-inner">
-						<button class="tablinks" onclick="openCity(event, 'sign-up')" >Sign Up</button>
+						<button class="tablinks" onclick="changeTab(event, 'sign-up')" >Sign Up</button>
 					</div>
 				</div>
-				<form class="form-detail" action="#" method="post">
+				<form class="form-detail" action="#" method="post" id="sign-in-form">
 					<div class="tabcontent" id="sign-in">
 						<!-- <div class="form-row">
 							<label class="form-row-inner">
@@ -86,10 +88,10 @@
 		  						<span class="border"></span>
 							</label>
                         </div> -->
-                        <br><br>
+						<br><br>
 						<div class="form-row">
 							<label class="form-row-inner">
-								<input type="text" name="your_email_1" id="your_email_1" class="input-text" required>
+								<input type="text" name="sign_in_email" id="sign_in_email" class="input-text" required>
 								<span class="label">E-Mail</span>
 		  						<span class="border"></span>
 							</label>
@@ -97,7 +99,7 @@
                         <br>
 						<div class="form-row">
 							<label class="form-row-inner">
-								<input type="password" name="password_1" id="password_1" class="input-text" required>
+								<input type="password" name="sign_in_password" id="sign_in_password" class="input-text" required>
 								<span class="label">Password</span>
 								<span class="border"></span>
 							</label>
@@ -115,32 +117,32 @@
 						</div>
 					</div>
 				</form>
-				<form class="form-detail" action="#" method="post">
+				<form class="form-detail" action="#" method="post" id="sign-up-form">
 					<div class="tabcontent" id="sign-up">
 						<div class="form-row">
 							<label class="form-row-inner">
-								<input type="text" name="full_name" id="full_name" class="input-text" required>
+								<input type="text" name="sign_up_full_name" id="sign_up_full_name" class="input-text" required>
 								<span class="label">Full Name</span>
 		  						<span class="border"></span>
 							</label>
 						</div>
 						<div class="form-row">
 							<label class="form-row-inner">
-								<input type="text" name="your_email" id="your_email" class="input-text" required>
+								<input type="text" name="sign_up_email" id="sign_up_email" class="input-text" required>
 								<span class="label">E-Mail</span>
 		  						<span class="border"></span>
 							</label>
 						</div>
 						<div class="form-row">
 							<label class="form-row-inner">
-								<input type="password" name="password" id="password" class="input-text" required>
+								<input type="password" name="sign_up_password" id="sign_up_password" class="input-text" required>
 								<span class="label">Password</span>
 								<span class="border"></span>
 							</label>
 						</div>
 						<div class="form-row">
 							<label class="form-row-inner">
-								<input type="password" name="comfirm_password" id="comfirm_password" class="input-text" required>
+								<input type="password" name="sign_up_comfirm_password" id="sign_up_comfirm_password" class="input-text" required>
 								<span class="label">Comfirm Password</span>
 								<span class="border"></span>
 							</label>
@@ -153,24 +155,6 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		function openCity(evt, cityName) {
-		    var i, tabcontent, tablinks;
-		    tabcontent = document.getElementsByClassName("tabcontent");
-		    for (i = 0; i < tabcontent.length; i++) {
-		        tabcontent[i].style.display = "none";
-		    }
-		    tablinks = document.getElementsByClassName("tablinks");
-		    for (i = 0; i < tablinks.length; i++) {
-		        tablinks[i].className = tablinks[i].className.replace(" active", "");
-		    }
-		    document.getElementById(cityName).style.display = "block";
-		    evt.currentTarget.className += " active";
-		}
-
-		// Get the element with id="defaultOpen" and click on it
-		document.getElementById("defaultOpen").click();
-    </script>
     <!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -180,5 +164,8 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+	<script src="js/form.js"></script>
+</body>
 </html>
