@@ -415,6 +415,11 @@ video {
 	z-index: 1;
 }
 
+.embed-video{
+	background-color: black;
+	padding: 20px 30px;
+}
+
 .background-overlay {
 	font-family:monospace;
 	background-color: black;
