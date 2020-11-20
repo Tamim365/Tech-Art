@@ -426,9 +426,6 @@ video {
 	opacity:20%;
 }
 
-
-
-
 /*------------------
    Hero-section
  ---------------------*/
@@ -1152,7 +1149,7 @@ Other pages
 	left: 0;
 	top: 0;
 	background: #0d0d11;
-	opacity: 0.74;
+	opacity: 0.50;
 	z-index: 1;
 }
 
