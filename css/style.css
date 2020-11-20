@@ -373,6 +373,21 @@ Header section
 	width: 15%;
 	opacity: 80%;
 }
+.dropdown-menu {
+	background-color: #1b262c;
+}
+.dropdown-item{
+	color: #fff;
+	padding: 5px 50px;
+}
+.dropdown-item:hover{
+	background: #2b2e4a;
+	color: #f9ed69;
+}
+
+.dropdown-item:hover::after{
+	width: 100%;
+}
 
 .header-add {
 	position: absolute;

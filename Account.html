@@ -43,9 +43,9 @@
     </div>
     
     <header class="header-section">
-		<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="opacity: 80%; margin: 0; padding: 0;">
+		<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark navbar-inner">
 			<div class="container">
-			  <a class="navbar-brand" href="index.html" style="width: 40%;">
+			  <a class="navbar-brand" href="index.html">
 				<img src="img/logo-1.png" alt="logo">
 			  </a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,16 +53,27 @@
 			  </button>
 			  <div class="collapse navbar-collapse" id="main_nav">	
 				<ul class="navbar-nav ml-auto">
-				  <li class="nav-item" style="padding: 10px 5px;"><a class="nav-link" href="index.html"> Home </a></li>
-				  <li class="nav-item" style="padding: 10px 5px;"><a class="nav-link" href="Tech-Timeline.html"> Tech Timeline </a></li>
-				  <li class="nav-item" style="padding: 10px 5px;"><a class="nav-link" href="#"> Explore </a></li>
-				  <li class="nav-item" style="padding: 10px 5px;"><a class="nav-link" href="TechStory.html"> Tech Story </a></li>
-				  <li class="nav-item" style="padding: 10px 5px;"><a class="nav-link" href="Account.html"> Login </a></li>
+				  <li class="nav-item"><a class="nav-link" href="index.html"> Home </a></li>
+				  <li class="nav-item"><a class="nav-link" href="Tech-Timeline.html"> Tech Timeline </a></li>
+				  <li class="nav-item dropdown"><a class="nav-link" href="#" role="button" data-toggle="dropdown" id="#dropdown-nav-link"> Explore </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">TRENDING</a>
+						<a class="dropdown-item" href="#">REVIEWS</a>
+						<a class="dropdown-item" href="#">ENTERTAINMENT</a>
+						<a class="dropdown-item" href="#">GAMING</a>
+						<a class="dropdown-item" href="#">SCIENCE</a>
+						<a class="dropdown-item" href="#">CYBERSECURITY</a>
+
+					  </div>
+					</li>
+				  <li class="nav-item"><a class="nav-link" href="TechStory.html"> Tech Story </a></li>
+				  <li class="nav-item"><a class="nav-link" href="Account.html"> Join | Sign in </a></li>
 				</ul>
 			  </div> <!-- navbar-collapse.// -->
 			</div> <!-- container.// -->
 			</nav>
 	</header>
+	
 	<div class="page-content">
 		<div class="form-v8-content">
 			<div class="form-left">
