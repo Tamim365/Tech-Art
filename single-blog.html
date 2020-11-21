@@ -109,7 +109,7 @@
 						<div class="comments">
 							<h5>Comments (3)</h5>
 							<ul class="comments-list" id="blog-comments">
-								<li>
+								<!-- <li>
 									<img src="img/author-thumbs/default.png" alt="">
 									<div class="comment-text">
 										<h6>Jane Smith</h6>
@@ -124,20 +124,20 @@
 										<div class="comment-date">November 1,2020</div>
 										<p>Non felis dapibus, placerat libero auctor, ornare ante. Morbi quis ex eleifend, sodales nulla vitae, scelerisque ante. Nunc id vulputate dui. Suspendisse consectetur rutrum metus.</p>
 									</div>
-								</li>
+								</li> -->
 							</ul>
 							<h5>Leave a comment</h5>
-							<form class="comment-form">
+							<form class="comment-form" id="comment-form">
 								<div class="row">
 									<div class="col-md-6">
-										<input type="text" placeholder="Your name">
+										<input type="text" placeholder="Your name" id = "comment-name">
 									</div>
 									<div class="col-md-6">
-										<input type="text" placeholder="Your e-mail">
+										<input type="text" placeholder="Your e-mail" id = "comment-email">
 									</div>
 									<div class="col-md-12">
-										<textarea placeholder="Your message"></textarea>
-										<button class="site-btn">post Comment</button>
+										<textarea placeholder="Your message" id="comment-message"></textarea>
+										<button class="site-btn" onclick="postComment(); return false">post Comment</button>
 									</div>
 								</div>
 							</form>
@@ -389,6 +389,10 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+	<script src="js/database.js"></script>
 	<script src="js/comment.js"></script>
 
 	<script>

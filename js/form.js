@@ -1,18 +1,3 @@
-
-// Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyB-HIDU9lHK748XWsEBzsYAjoN9KEbgtxk",
-    authDomain: "test-91938.firebaseapp.com",
-    databaseURL: "https://test-91938.firebaseio.com",
-    projectId: "test-91938",
-    storageBucket: "test-91938.appspot.com",
-    messagingSenderId: "296187612268",
-    appId: "1:296187612268:web:c89640be93bb1c758ddc49"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
-
 const sign_up_form = document.querySelector("#sign-up-form");
 const sign_in_form = document.querySelector("#sign-in-form");
 
@@ -58,6 +43,7 @@ sign_in_form.addEventListener('submit', (e) => {
     auth.signInWithEmailAndPassword(email, password).then((response) => {
         console.log(response.user);
         alert("Login Successful!");
+        currentUser = auth.currentUser;
         sign_in_form.reset();
     }).catch((e) => {
         console.log(e);
