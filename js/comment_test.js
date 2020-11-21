@@ -1,16 +1,17 @@
-function postComment(idNameForm)
+fetchFromDb();
+var comment_form = document.querySelector('#comment-form');
+
+function postComment()
 {
-    var comment_form = document.querySelector('#comment-form');
     var name = comment_form['comment-name'].value;
     var email = comment_form['comment-email'].value;
     var msg = comment_form['comment-message'].value;
     var dateStr = getDate();
-    makeComment(name, msg, dateStr, idNameForm);
-    pushToDb(name, email, dateStr, msg, idNameForm);
-    comment_form.reset();
+    makeComment(name, email, msg, dateStr);
+    pushToDb(name, email, dateStr, msg);
 }
 
-function makeComment(name, msg, dateStr)
+function makeComment(name, email, msg, dateStr)
 {
     var para = document.createElement("P");
     para.appendChild(document.createTextNode(msg));
@@ -38,20 +39,21 @@ function makeComment(name, msg, dateStr)
 
     document.querySelector('.comments h5').innerHTML = "Comments (" + $('.comments-list li').length + ")";
 
+    comment_form.reset();
+
 }
 
-function pushToDb(name, email, date, comment, id)
+function pushToDb(name, email, date, comment)
 {
     db.ref('comments').push({
         name: name,
         email: email,
         date: date,
         comment: comment,
-        id: id,
     })
 }
 
-function fetchFromDb(idNameForm)
+function fetchFromDb()
 {
     db.ref('comments').once('value',   function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
@@ -60,10 +62,10 @@ function fetchFromDb(idNameForm)
             //console.log(childKey);
             //console.log(childData);
             var name = childData['name'];
+            var email = childData['email'];
             var date = childData['date'];
             var comment = childData['comment'];
-            var id = childData['id'];
-            if(id==idNameForm) makeComment(name, comment, date);
+            makeComment(name, email, comment, date);
         });
     });
 }

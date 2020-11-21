@@ -94,9 +94,9 @@
 			<div class="row">
 				<div class="col-lg-8">
 					<div class="blog-post single-post">
-						<img src="img/blog-thumbs/iphone12.jpg" alt="">
+						<img src="img/blog-thumbs/macbookair.jpg" alt="">
 						<div class="post-date">November 1, 2020</div>
-						<h3>Iphone 12 Pro</h3>
+						<h3>Macbook Air 2020</h3>
 						<div class="post-metas">
 							<div class="post-meta">By Admin</div>
 							<div class="post-meta">in <a href="#">Trending</a></div>
@@ -107,7 +107,7 @@
 						<p>Fusce urna quam, euismod sit amet mollis quis, vestibulum quis velit. Vestibulum malesuada aliquet libero viverra cursus. Aliquam erat volutpat. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. Sed sollicitudin nulla non leo viverra scelerisque. Phasellus facilisis lobortis metus, sit amet viverra lectus finibus ac. Aenean non felis dapibus, placerat libero auctor, ornare ante. Morbi quis ex eleifend, sodales nulla vitae, scelerisque ante. Nunc id vulputate dui. Suspendisse consecte-tur rutrum metus nec scelerisque. </p>
 
 						<div class="comments">
-							<h5>Comments (3)</h5>
+							<h5>Comments (0)</h5>
 							<ul class="comments-list" id="blog-comments">
 								<!-- <li>
 									<img src="img/author-thumbs/default.png" alt="">
@@ -137,7 +137,7 @@
 									</div>
 									<div class="col-md-12">
 										<textarea placeholder="Your message" id="comment-message"></textarea>
-										<button class="site-btn" onclick="postComment(); return false">post Comment</button>
+										<button class="site-btn" onclick="postComment('blog_macBookAir'); return false">post Comment</button>
 									</div>
 								</div>
 							</form>
@@ -393,8 +393,10 @@
 	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
 	<script src="js/database.js"></script>
-	<script src="js/comment_test.js"></script>
-
+    <script src="js/comment.js"></script>
+    <script>
+        fetchFromDb('blog_macBookAir');
+    </script>
 	<script>
 		AOS.init();
 	</script>
