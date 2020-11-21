@@ -44,7 +44,7 @@ h6 {
 
 p {
 	font-size: 16px;
-	color: #8c8c8c;
+	color: #e3fdfd;
 	line-height: 1.8;
 }
 
@@ -1247,7 +1247,7 @@ Single Post page
 }
 
 .comments-list .comment-text h6 {
-	color: #fff;
+	color: #08d9d6;
 	font-weight: 500;
 	margin-bottom: 5px;
 }
@@ -1261,7 +1261,7 @@ Single Post page
 .comments-list .comment-text .comment-date {
 	font-size: 12px;
 	font-weight: 700;
-	color: #a5a4a4;
+	color: #fce38a;
 	margin-bottom: 15px;
 }
 
@@ -1567,30 +1567,30 @@ Game Page
 	top: -30px;
 }
 
-.timeline-boxes-section {
+.suggestion-boxes-section {
 	background: #000000;
 	padding: 113px 0 90px;
 }
 
-.timeline-box {
+.suggestion-box {
 	margin-bottom: 30px;
 }
 
-.timeline-box img {
+.suggestion-box img {
 	margin-bottom: 35px;
 	min-width: 100%;
 }
 
-.timeline-box h4 {
+.suggestion-box h4 {
 	color: #fff;
 	margin-bottom: 20px;
 }
 
-.timeline-box p {
+.suggestion-box p {
 	margin-bottom: 25px;
 }
 
-.timeline-box .rm {
+.suggestion-box .rm {
 	color: #10ddb4;
 	font-size: 16px;
 	font-weight: 700;
