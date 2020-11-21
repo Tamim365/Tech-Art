@@ -1214,6 +1214,11 @@ Single Post page
 	margin-bottom: 30px;
 }
 
+.splide__slide img {
+	width : 100%;
+	height: auto;
+}
+
 .comments {
 	padding-top: 50px;
 }
