@@ -29,6 +29,9 @@ sign_up_form.addEventListener('submit', (e) => {
                 tablinks[0].className += " active";
                 sign_up_form.reset();
                 auth.signOut();
+            }).catch((e) => {
+                document.querySelector('.invalid').innerHTML = "Invalid Email Format";
+                document.querySelector('.invalid').style.display = 'block';
             })
         }
     }
@@ -47,6 +50,7 @@ sign_in_form.addEventListener('submit', (e) => {
         sign_in_form.reset();
     }).catch((e) => {
         console.log(e);
+        document.querySelector('.invalid').innerHTML = "Invalid Email or Password";
         document.querySelector('.invalid').style.display = 'block';
     })
 })
@@ -55,6 +59,7 @@ sign_in_form.addEventListener('submit', (e) => {
 function changeTab(evt, tabName) {
     var i, tabcontent, tablinks;
     document.querySelector('.alert').style.display = 'none';
+    document.querySelector('.invalid').style.display = 'none';
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
