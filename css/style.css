@@ -2486,6 +2486,13 @@ ul.tt-socail {
 	display: none;
 }
 
+/* #if-log-in{
+	display: none;
+}
+#if-log-out{
+	display: none;
+} */
+
 /* Responsive */
 @media screen and (max-width: 991px) {
 	.form-v8-content {

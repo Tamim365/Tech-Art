@@ -47,6 +47,9 @@ sign_in_form.addEventListener('submit', (e) => {
         console.log(response.user);
         alert("Login Successful!");
         currentUser = auth.currentUser;
+        document.querySelector("#if-log-out").innerHTML = 'Profile';
+        document.querySelector("#if-log-out").href = 'profile.html';
+        document.querySelector('#if-log-in').style.visibility = 'visible';
         sign_in_form.reset();
     }).catch((e) => {
         console.log(e);
@@ -55,6 +58,13 @@ sign_in_form.addEventListener('submit', (e) => {
     })
 })
 
+function logout()
+{
+    auth.signOut();
+    document.querySelector("#if-log-out").innerHTML = 'Join | Sign in';
+    document.querySelector("#if-log-out").href = 'Account.html';
+    document.querySelector('#if-log-in').style.visibility = 'hidden';
+}
 
 function changeTab(evt, tabName) {
     var i, tabcontent, tablinks;
