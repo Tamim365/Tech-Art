@@ -13,3 +13,12 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.database();
 var currentUser = auth.currentUser;
+
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        console.log(user);
+    } else {
+        console.log(user);
+    }
+  });
+  

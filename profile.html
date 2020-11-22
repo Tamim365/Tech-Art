@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tech Art | Timeline</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Tech">
+	<meta name="keywords" content="Tech, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
+	<link href="css/hover.css" rel="stylesheet" media="all">
+	<link href="css/hover-min.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/profile.css"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<!-- <section class="page-top-section set-bg" data-setbg="img/header-bg/socialmedia.png">
+    <div class="container">
+        <h2>S O C I A L - M E D I A</h2>
+    </div>
+</section> -->
+
+<body class="form-v8">
+    <!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+    </div>
+    
+    <header class="header-section">
+		<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark navbar-inner">
+			<div class="container">
+			  <a class="navbar-brand" href="index.html">
+				<img src="img/logo-1.png" alt="logo">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="main_nav">	
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item"><a class="nav-link" href="index.html"> Home </a></li>
+				  <li class="nav-item"><a class="nav-link" href="Tech-Timeline.html"> Tech Timeline </a></li>
+				  <li class="nav-item dropdown"><a class="nav-link" href="#" role="button" data-toggle="dropdown" id="#dropdown-nav-link"> Explore </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="Trending.html">TRENDING</a>
+						<a class="dropdown-item" href="Entertainment.html">ENTERTAINMENT</a>
+						<a class="dropdown-item" href="Gaming.html">GAMING</a>
+						<a class="dropdown-item" href="Social.html">SOCIAL MEDIA</a>
+						<a class="dropdown-item" href="Science.html">SCIENCE</a>
+					  </div>
+					</li>
+				  <li class="nav-item"><a class="nav-link" href="TechStory.html"> Tech Story </a></li>
+				  <li class="nav-item"><a class="nav-link" href="Account.html"> Join | Sign in </a></li>
+				</ul>
+			  </div> <!-- navbar-collapse.// -->
+			</div> <!-- container.// -->
+			</nav>
+	</header>
+	
+	<div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-body">
+                        <div class="card-title mb-4">
+                            <div class="d-flex justify-content-start">
+                                <div class="image-container">
+                                    <img src="http://placehold.it/150x150" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+                                    <div class="middle">
+                                        <input type="button" class="btn btn-secondary" id="btnChangePicture" value="Change" />
+                                        <input type="file" style="display: none;" id="profilePicture" name="file" />
+                                    </div>
+                                </div>
+                                <div class="userData ml-3">
+                                    <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="javascript:void(0);">Some Name</a></h2>
+                                    <h6 class="d-block"><a href="javascript:void(0)">300</a> Blog Posts</h6>
+                                </div>
+                                <div class="ml-auto">
+                                    <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="basicInfo-tab" data-toggle="tab" href="#basicInfo" role="tab" aria-controls="basicInfo" aria-selected="true">Basic Info</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" role="tab" aria-controls="connectedServices" aria-selected="false">Connected Services</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content ml-1" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
+                                        
+
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold;">Full Name</label>
+                                            </div>
+                                            <div class="col-md-8 col-6">
+                                                Jamshaid Kamran
+                                            </div>
+                                        </div>
+                                        <hr />
+
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold;">Birth Date</label>
+                                            </div>
+                                            <div class="col-md-8 col-6">
+                                                March 22, 1994.
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold;">Something</label>
+                                            </div>
+                                            <div class="col-md-8 col-6">
+                                                Something
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold;">Something</label>
+                                            </div>
+                                            <div class="col-md-8 col-6">
+                                                Something
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold;">Something</label>
+                                            </div>
+                                            <div class="col-md-8 col-6">
+                                                Something
+                                            </div>
+                                        </div>
+                                        <hr />
+
+                                    </div>
+                                    <div class="tab-pane fade" id="connectedServices" role="tabpanel" aria-labelledby="ConnectedServices-tab">
+                                        Facebook, Google, Twitter Account that are connected to this account
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="js/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+	<script src="js/database.js"></script>
+	<script src="js/profile.js"></script>
+</body>
+</html>
