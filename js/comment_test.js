@@ -7,11 +7,11 @@ function postComment()
     var email = comment_form['comment-email'].value;
     var msg = comment_form['comment-message'].value;
     var dateStr = getDate();
-    makeComment(name, email, msg, dateStr);
+    makeComment(name, email, msg, dateStr, '-for debug');
     pushToDb(name, email, dateStr, msg);
 }
 
-function makeComment(name, email, msg, dateStr)
+function makeComment(name, email, msg, dateStr, id)
 {
     var para = document.createElement("P");
     para.appendChild(document.createTextNode(msg));
@@ -19,7 +19,7 @@ function makeComment(name, email, msg, dateStr)
     date.className = "comment-date";
     date.appendChild(document.createTextNode(dateStr));
     var h = document.createElement("H6");
-    h.appendChild(document.createTextNode(name));
+    h.appendChild(document.createTextNode(name + ' in ' + id));
     var comment_text = document.createElement("DIV");
     comment_text.className = "comment-text";
 
@@ -65,7 +65,8 @@ function fetchFromDb()
             var email = childData['email'];
             var date = childData['date'];
             var comment = childData['comment'];
-            makeComment(name, email, comment, date);
+            var id = childData['id'];
+            makeComment(name, email, comment, date, id);
         });
     });
 }
